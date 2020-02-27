@@ -1,0 +1,18 @@
+{
+  "name": "sorter-in-typescript",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/VincentCloud/sorter-in-typescript.git",
+  "author": "Vincent Huang <39947361+VincentCloud@users.noreply.github.com>",
+  "license": "MIT",
+  "dependencies": {
+    "concurrently": "^5.1.0",
+    "nodemon": "^2.0.2",
+    "typescript": "^3.8.2"
+  },
+  "scripts": {
+    "start:build": "tsc -w",
+    "start:run": "nodemon build/index.js",
+    "start": "concurrently yarn:start:*"
+  }
+}
